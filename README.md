@@ -25,31 +25,24 @@ This directory contains scripts to automate tasks like deploying contracts to th
 deploy.js: A script that deploys your CoinFlip smart contract to the Ethereum blockchain (Sepolia testnet in this case).
 **4. Frontend Directory (coinflip-frontend/)**
 This directory is where your React-based frontend application resides. It contains the code for the user interface and logic for interacting with the Ethereum network and the smart contract.
+- Pick a blockchain from: Ethereum. Use their ‘devnet/testnet’
+- ![image](https://github.com/user-attachments/assets/bc8c5b58-9d88-4337-8123-4a2fa1f62302)
 
-public/:
 
-index.html: The main HTML file that React will render the application into. This file includes the root div (<div id="root"></div>) where the React app is injected.
-favicon.ico: The favicon for your web app.
-manifest.json: Provides metadata for the app, including its name, icons, and theme color.
-src/: The main directory for your React application source code.
+- Build a coinflip game, where the user can connect their wallet and then flip a coin on the screen.
+on it 
+- User can select how much tokens from their wallet (SOL, ETH or BTC) they want to risk, and also select a side.
+![image](https://github.com/user-attachments/assets/0b7963d1-f8a9-4f26-9652-d29fe8f29980)
 
-App.js: The main component of the application that contains the logic for interacting with the smart contract and the UI for the coin flip game.
-index.js: The entry point for the React application, responsible for rendering the App component into the DOM.
-App.css: The CSS file that contains styles specific to the App component.
-index.css: Global styles for the application.
-components/: You might create this directory to hold reusable React components, like a button or a modal, used across your app.
-utils/: You might create this directory to hold utility functions or configurations, such as connecting to Web3 or formatting data.
-node_modules/: This directory contains all the Node.js packages installed as dependencies for the frontend application. It is typically ignored in version control (.gitignore).
+- If it lands on the side that they chose, they get double their tokens back, if it’s the wrong side, they get nothing.
 
-**5. Miscellaneous Files**
-.env: Environment variables file (if needed). You might store sensitive information like API keys or private keys here. This file should be included in your .gitignore file to avoid accidentally exposing sensitive data in version control.
-README.md: A markdown file that contains information about your project, including how to set it up, run it, and any other relevant details. This is especially important when sharing the project on GitHub.
-Summary of Workflow:
-Contracts: You write the smart contract in the contracts/ directory and deploy it using scripts in the scripts/ directory.
-Frontend: The frontend is developed in the coinflip-frontend/ directory, using React to create the UI and Web3 to interact with the smart contract.
-Deployment: Once everything is ready, you deploy the smart contract to Sepolia and the frontend to Vercel.
-Testing: Test the full workflow to ensure everything is functioning as expected.
-This structure separates concerns (smart contracts vs. frontend) and keeps the project organized, making it easier to maintain and expand upon in the future.
+- To get testing tokens use a ‘faucet’
+![image](https://github.com/user-attachments/assets/f6b114a5-a3e0-48c9-a46a-f5f877ea15cb)
+
+- You should deploy a simple smart contract so that the users wallet actually loses/gains tokens.
+![image](https://github.com/user-attachments/assets/b46439bc-4bab-4994-a0a8-3178c48a2ee7)
+
+- Show the transaction of the user gaining / losing funds on etherscan, solscan, etc
 
 **UI:**
 ![image](https://github.com/user-attachments/assets/887163eb-b372-4be3-a4e5-d7a2a4778a76)
