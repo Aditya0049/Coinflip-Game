@@ -51,3 +51,12 @@ Deployment: Once everything is ready, you deploy the smart contract to Sepolia a
 Testing: Test the full workflow to ensure everything is functioning as expected.
 This structure separates concerns (smart contracts vs. frontend) and keeps the project organized, making it easier to maintain and expand upon in the future.
 
+**UI:**
+![image](https://github.com/user-attachments/assets/887163eb-b372-4be3-a4e5-d7a2a4778a76)
+![Screenshot 2024-08-26 171519](https://github.com/user-attachments/assets/916664f7-2765-473c-a41e-02576d310623)
+![Screenshot 2024-08-26 171449](https://github.com/user-attachments/assets/b47518a7-d8b6-4a23-b4fa-6ce27a763d73)
+
+
+
+
+
